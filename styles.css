@@ -1,1 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    background-color: darkgreen;
+
+    text-align: center;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+
+    position: relative;
+}
+
+div{
+    position: relative;
+}
+
+
+div::after{
+    background-image: linear-gradient(0deg, black, transparent);;
+    content: " ";
+
+    left: 0;
+    bottom: 0;
+    position: absolute;
+
+    height: 20px;
+    width: 100%;
+
+
+}
+
+h1.section_header{
+    font-size: max(5vh, 30px);
+}
+
+pre{
+    font-size: 20px;
+}
 
