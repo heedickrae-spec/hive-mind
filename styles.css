@@ -5,8 +5,12 @@
     text-decoration: none;
 }
 
-header{
+.green{
     background-color: darkgreen;
+}
+
+header{
+    height: fit-content;
 
     text-align: center;
     font-family: monospace, Arial, Helvetica, sans-serif;
@@ -38,7 +42,9 @@ h1.section_header{
     font-size: max(5vh, 30px);
 }
 
-pre{
-    font-size: 20px;
+img#logo{
+    float: left;
+    margin: 5px;
 }
+
 
