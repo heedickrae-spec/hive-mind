@@ -5,6 +5,11 @@
     text-decoration: none;
 }
 
+div{
+    position: relative;
+    background-color: white;
+}
+
 div:nth-child(odd){
     background-color: darkgreen;
 }
@@ -16,10 +21,6 @@ header{
     font-family: monospace, Arial, Helvetica, sans-serif;
     font-size: 5vh;
 
-    position: relative;
-}
-
-div{
     position: relative;
 }
 
