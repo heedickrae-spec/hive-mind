@@ -7,11 +7,34 @@
 
 div{
     position: relative;
-    background-color: white;
-}
+    background-color: skyblue;
+    padding: 1%;
 
-div:nth-child(odd){
+    &:nth-child(odd){
     background-color: darkgreen;
+    }
+
+    &::after{
+        background-image: linear-gradient(0deg, black, transparent);;
+        content: " ";
+
+        left: 0;
+        bottom: 0;
+        position: absolute;
+
+        height: 20px;
+        width: 100%;
+    }
+
+    &:hover{
+        filter: brightness(130%);
+        
+    }
+
+    & h1:nth-child(1){
+        font-size: max(5vh, 30px);
+    }
+
 }
 
 header{
@@ -22,32 +45,14 @@ header{
     font-size: 5vh;
 
     position: relative;
-}
 
-
-div::after{
-    background-image: linear-gradient(0deg, black, transparent);;
-    content: " ";
-
-    left: 0;
-    bottom: 0;
-    position: absolute;
-
-    height: 20px;
-    width: 100%;
-
-
-}
-
-h1.section_header{
-    font-size: max(5vh, 30px);
+    padding: none;
 }
 
 img.logo{
-    float: left;
     margin: 5px;
+    float: left;
 }
-
 
 footer{
     color: white;
@@ -57,18 +62,22 @@ footer{
     background-color: black;
     text-align: center;
 
-}
-
-footer a{
-    color: white;
-    text-decoration: underline solid white;
-}
-
-
-footer div{
-    background-color: black !important;
-    
-    &&::after{
-        width: 0;
+    & a{
+        color: inherit;
+        text-decoration: underline solid white;
     }
+
+    & div{
+        background-color: black !important;
+        
+        &&::after{
+            width: 0;
+        }
+    }
+
+}
+
+a{
+    color: inherit;
+    text-decoration: underline solid;
 }
